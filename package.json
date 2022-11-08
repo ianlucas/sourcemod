@@ -1,0 +1,19 @@
+{
+  "name": "sourcemod",
+  "description": "My SourceMod package manager.",
+  "version": "1.0.0",
+  "main": "cli.js",
+  "bin": {
+    "sourcemod": "cli.js"
+  },
+  "type": "module",
+  "dependencies": {
+    "@etclabscore/dl-github-releases": "^1.2.1",
+    "meow": "^11.0.0",
+    "node-fetch": "^3.2.10",
+    "unzipper": "^0.10.11"
+  },
+  "devDependencies": {},
+  "author": "Ian Lucas",
+  "license": "MIT"
+}
