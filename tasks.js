@@ -36,6 +36,12 @@ export async function installLatestSourceModRelease(platform) {
   rmSync(sourceModPath);
 }
 
+export async function deps() {
+  const smSourceModFolder = getSourceModFolder();
+  const cwd = process.cwd();
+  await resolveDependencies(cwd, smSourceModFolder);
+}
+
 export async function compile() {
   const smSourceModFolder = getSourceModFolder();
   /** @TODO Windows is hardcoded at the moment, so this will work only for it. */
@@ -48,7 +54,6 @@ export async function compile() {
     return console.error('Did you install the latest SourceMod release?');
   }
   const cwd = process.cwd();
-  await resolveDependencies(cwd, smSourceModFolder);
   const sourceModFolder = resolve(cwd, 'addons/sourcemod');
   const scriptingFolder = resolve(sourceModFolder, 'scripting');
   const pluginsFolder = resolve(sourceModFolder, 'plugins');
