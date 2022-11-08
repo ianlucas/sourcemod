@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 import meow from 'meow';
-import { compile, deps, installLatestSourceModRelease } from './tasks.js';
+import { compile, deps, install } from './tasks.js';
 
 const cli = meow(
   `
@@ -16,7 +16,7 @@ const cli = meow(
 function main() {
   switch (cli.input[0]) {
     case 'install':
-      return installLatestSourceModRelease(cli.input[1]);
+      return install(cli.input[1]);
     case 'deps':
       return deps();
     case 'compile':

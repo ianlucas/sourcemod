@@ -9,7 +9,7 @@ import {
 } from './sourcemod.js';
 import { execWin, unzip } from './util.js';
 
-export async function installLatestSourceModRelease(platform) {
+export async function install(platform) {
   const sourceModFolder = getSourceModFolder();
   const sourceMod = sourceModJson();
   const details = await fetchLatestReleaseDetails(platform);
