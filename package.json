@@ -10,7 +10,8 @@
   "author": "Ian Lucas",
   "license": "MIT",
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "publish": "npm publish --access=public"
   },
   "dependencies": {
     "got": "^12.5.3",
