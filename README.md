@@ -20,4 +20,4 @@ ptah
 ```
 
 > **Note**
-> Dependencies must exist on `src/packages` folder. Those are basically scripts for downloading the dependency files and making it easy to kick off new projects.
+> Dependencies must exist in `./src/packages` folder. Those are basically scripts for downloading the dependency files and making it easy to kick off new projects.
