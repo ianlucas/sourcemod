@@ -1,5 +1,5 @@
 {
-  "include": ["src/cli.ts"],
+  "include": ["src/cli.ts", "src/packages/*"],
   "compilerOptions": {
     "outDir": "dist",
     "target": "es2020",
