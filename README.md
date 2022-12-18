@@ -12,7 +12,7 @@ npm install @ianlucas/sourcemod -g
 
 ### Defining dependencies
 
-Create a `sourcemod.txt` file in the root of your project. Place every dependency in a line, like this:
+To create a list of dependencies for your project, create a `sourcemod.txt` file in the root directory of your project. Each dependency should be listed on a separate line, like this:
 
 ```
 json
@@ -20,4 +20,4 @@ ptah
 ```
 
 > **Note**
-> Dependencies must exist in `./src/packages` folder. Those are basically scripts for downloading the dependency files and making it easy to kick off new projects.
+> Dependencies should be located in the `./src/packages` directory. These are scripts that facilitate the download of dependency files and simplify the process of starting new projects.
