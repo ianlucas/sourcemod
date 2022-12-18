@@ -20,4 +20,4 @@ ptah
 ```
 
 > **Note**
-> Dependencies should be located in the `./src/packages` directory. These are scripts that facilitate the download of dependency files and simplify the process of starting new projects.
+> The list of covered dependencies is listed in the `sourcemod.txt` file in the root of this repository. These are scripts that facilitate the download of dependency files and simplify the process of starting new projects.
